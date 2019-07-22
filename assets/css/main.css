@@ -3958,18 +3958,17 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-#blinking-cursor::after {
+#blinking-cursor {
   content: "";
   position: relative;
   top: 0;
   right: 40px;
   /* Remove display: inline-block if not required to be on the same line as text etc */
-  display: inline-block;
   background-color: white;
   vertical-align: top;
-  width: 50px;
+  width: .75em;
   /* Set height to the line height of .text */
-  height: 100px;
+  height: 1.5em;
   /* 
   Animation paramaters:
   blink = animation-name, 
@@ -3981,16 +3980,24 @@ input, select, textarea {
   animation: blink 1s step-end infinite;
 }
 
+.blinking {
+	animation: blink 1s step-end infinite;
+}
+
 @-webkit-keyframes blink {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
+	0%{     color: #FFF;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color: transparent;  }
+    100%{   color: #FFF;    }
 }
 
 @keyframes blink {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
+	0%{     color: #FFF;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color: transparent;  }
+    100%{   color: #FFF;    }
 }
 
 .project-banner {

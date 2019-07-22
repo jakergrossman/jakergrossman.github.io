@@ -3993,7 +3993,9 @@ input, select, textarea {
   100% { opacity: 1.0; }
 }
 
-#open-source {
+.project-banner {
 	text-align: center;
+	line-height: 3em;
 	background-color: #0b132b;
+	height: 3em;
 }

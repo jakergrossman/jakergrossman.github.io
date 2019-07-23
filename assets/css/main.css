@@ -1,121 +1,40 @@
 /* Color palette:
-	Seal Brown: #4c2e05
-	Dark Tan: #7a8450
-	Laurel Green: #aebd93
-	Cleadon: #bee7b8
-	Spanish Gray: #95969d
+	Slate Gray: #222
+	Electric Green: #b9c0be
 */
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:600&display=swap');
 
-body, html {
-	height: 100%;
-	background: #aebd93;
-	color: white;
-	font-family: 'IBM Plex Mono', monospace;
+html, body {
+	font-family: 'IBM Plex Mono', 'monospace';
+	text-transform: lowercase;
+
+	/* Prevent scrolling */
 	overflow: hidden;
 }
 
-#header {
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	background-color: #7a8450;
-	box-shadow: 0 0 0.4em 0 rgba(0, 0, 0, 0.35);
-	cursor: default;
-	height: 3em;
-	left: 0;
-	padding-right: 20px;
-	letter-spacing: 0.25em;
-	line-height: 1.5em;
-	margin: 0;
-	position: fixed;
+.navbar a {
+	padding: 0 1em;
+}
+
+.navbar .navbar-brand {
+	color: #00bc8c !important;
+	background: none;
 	text-transform: uppercase;
-	top: 0;
-	width: 100%;
-	z-index: 10000;
 }
 
-#header .logo {
-	border: 0;
-	display: inline-block;
-	font-size: 1em;
-	height: inherit;
-	line-height: inherit;
-	text-transform: uppercase;
-	padding: 0 1.5em;
+.navbar .navbar-brand strong {
+	color: #303030;
+	background: #00bc8c;
+	padding: 0.25em;
 }
 
-#header .logo strong {
-	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	color: #aebd93;
-	background: white;
-	display: inline-block;
-	line-height: 1.65em;
-	margin-right: 0.325em;
-	padding: 0 0.325em 0 0.375em;
-}
-
-#header .logo:hover strong {
-	background-color: #aebd93;
-	color: #7a8450;
-}
-
-#header nav {
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	-moz-justify-content: -moz-flex-end;
-	-webkit-justify-content: -webkit-flex-end;
-	-ms-justify-content: -ms-flex-end;
-	justify-content: flex-end;
-	-moz-flex-grow: 1;
-	-webkit-flex-grow: 1;
-	-ms-flex-grow: 1;
-	flex-grow: 1;
-	height: inherit;
-	line-height: inherit;
-}
-
-#header nav a {
-	color: white;
-	border: 0;
-	display: block;
-	font-size: 2em;
-	height: inherit;
-	line-height: 1.5em;
-	padding: 0 0.25em;
-	position: relative;
-	width: 1em;
-}
-
-#header nav a:last-child {
-	padding-right: .75em;
-}
-
-.hero {
-	height: 50%;
-}
-
-.hero-text {
-	text-align: center;
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, 50%);
-	color: white;
-	font-size: 3em;
-	height: inherit;
-	line-height: inherit;
-	padding: 0 1.5em;
+.jumbotron {
+	color: #00bc8c;
+	background-color: #222;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .blinking {
@@ -123,17 +42,17 @@ body, html {
 }
 
 @-webkit-keyframes blink {
-	0%{     color: #FFF;    }
+	0%{     color: inherit;    }
     49%{    color: transparent; }
     50%{    color: transparent; }
     99%{    color: transparent;  }
-    100%{   color: #FFF;    }
+    100%{   color: inherit;    }
 }
 
 @keyframes blink {
-	0%{     color: #FFF;    }
+	0%{     color: inherit;    }
     49%{    color: transparent; }
     50%{    color: transparent; }
     99%{    color: transparent;  }
-    100%{   color: #FFF;    }
+    100%{   color: inherit;    }
 }

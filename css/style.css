@@ -1,6 +1,8 @@
 /* Color palette:
-	Slate Gray: #222
-	Electric Green: #b9c0be
+	Charcocal:			#171717
+	Slate Gray: 		#222
+	Gray: 					#333
+	Electric Green: #00bc8c
 */
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:600&display=swap');
 
@@ -9,11 +11,21 @@ html, body {
 	text-transform: lowercase;
 
 	/* Prevent scrolling */
-	overflow: hidden;
+	/* overflow: hidden; */
 
 	/* Color Variables */
+	--charcoal: #171717;
 	--slate-gray: #222;
+	--gray: #333;
 	--electric-green: #00bc8c;
+}
+
+#header {
+	box-shadow: 0 .05em .5em black;
+}
+
+.navbar {
+	background-color: var(--charcoal) !important;
 }
 
 .navbar a {
@@ -26,19 +38,26 @@ html, body {
 	text-transform: uppercase;
 }
 
-.navbar .navbar-brand strong {
-	color: var(--slate-gray, gray);
-	background: var(--electric-green, greenz);
+strong {
+	color: var(--gray, gray);
+	background: var(--electric-green, green);
 	padding: 0.25em;
 }
 
 .jumbotron {
 	color: var(--electric-green, green);
-	background-color: var(--slate-gray, gray);
+	background-color: var(-gray, gray);
+	background-image: url("../img/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+	height: 75vh;
+	margin-bottom: 0;
+	margin-top: 7vh;
+}
+
+.lead {
+	text-transform: uppercase;
 }
 
 .blinking {
@@ -59,4 +78,21 @@ html, body {
     50%{    color: transparent; }
     99%{    color: transparent;  }
     100%{   color: inherit;    }
+}
+
+.page-footer .container {
+	height: 14vh;
+	vertical-align: middle;
+}
+
+.fab span{
+	font-family: 'Fira Mono', monospace;
+	font-size: .5em;
+	padding-left: 1em;
+	vertical-align: middle;
+}
+
+.footer-copyright {
+	color: var(--electric-green);
+	background-color: var(--charcoal);
 }

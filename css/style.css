@@ -1,0 +1,62 @@
+/* Color palette:
+	Slate Gray: #222
+	Electric Green: #b9c0be
+*/
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:600&display=swap');
+
+html, body {
+	font-family: 'IBM Plex Mono', 'monospace';
+	text-transform: lowercase;
+
+	/* Prevent scrolling */
+	overflow: hidden;
+
+	/* Color Variables */
+	--slate-gray: #222;
+	--electric-green: #00bc8c;
+}
+
+.navbar a {
+	padding: 0 1em;
+}
+
+.navbar .navbar-brand {
+	color: var(--electric-green, green) !important;
+	background: none;
+	text-transform: uppercase;
+}
+
+.navbar .navbar-brand strong {
+	color: var(--slate-gray, gray);
+	background: var(--electric-green, greenz);
+	padding: 0.25em;
+}
+
+.jumbotron {
+	color: var(--electric-green, green);
+	background-color: var(--slate-gray, gray);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.blinking {
+	animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+	0%{     color: inherit;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color: transparent;  }
+    100%{   color: inherit;    }
+}
+
+@keyframes blink {
+	0%{     color: inherit;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color: transparent;  }
+    100%{   color: inherit;    }
+}

@@ -6,6 +6,7 @@
 */
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:600&display=swap');
 
+/* General Styles =========================================================== */
 html, body {
 	font-family: 'IBM Plex Mono', 'monospace';
 	text-transform: lowercase;
@@ -20,6 +21,17 @@ html, body {
 	--electric-green: #00bc8c;
 }
 
+.upper {
+	text-transform: uppercase;
+}
+
+strong {
+	color: var(--charcoal, gray);
+	background: var(--electric-green, green);
+	padding: 0.25em;
+}
+
+/* Navbar Styles ============================================================ */
 #header {
 	box-shadow: 0 .05em .5em black;
 }
@@ -38,22 +50,22 @@ html, body {
 	text-transform: uppercase;
 }
 
-strong {
-	color: var(--gray, gray);
-	background: var(--electric-green, green);
-	padding: 0.25em;
-}
+/* Hero Styles ============================================================== */
 
 .jumbotron {
 	color: var(--electric-green, green);
-	background-color: var(-gray, gray);
+	background-color: var(--gray, gray);
 	background-image: url("../img/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-	height: 75vh;
+	height: 60vh;
 	margin-bottom: 0;
 	margin-top: 7vh;
+}
+
+.jumbotron .container {
+	margin-top: 13vh;
 }
 
 .lead {
@@ -80,9 +92,34 @@ strong {
     100%{   color: inherit;    }
 }
 
-.page-footer .container {
-	height: 14vh;
-	vertical-align: middle;
+/* Project Styles =========================================================== */
+
+.media {
+	padding: 1em;
+}
+
+.media-body {
+	color: var(--electric-green);
+}
+
+.project-link {
+	background: var(--charcoal);
+	padding: .125em .5em;
+}
+
+/* Footer Styles ============================================================ */
+
+#left-wing {
+	padding-top: .4em;
+	padding-left: 1em;
+}
+
+#right-wing {
+	padding: 0 1em;
+}
+
+#right-wing a {
+	padding: 0 .5em;
 }
 
 .fab span{
@@ -95,4 +132,6 @@ strong {
 .footer-copyright {
 	color: var(--electric-green);
 	background-color: var(--charcoal);
+	display: flex;
+	justify-content: space-between;
 }

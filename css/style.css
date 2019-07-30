@@ -50,6 +50,18 @@ strong {
 	text-transform: uppercase;
 }
 
+<<<<<<< HEAD
+=======
+.navbar-nav li a {
+	display: inline-flex;
+	align-items: center;
+}
+
+.navbar-nav li a span {
+	padding-left: 1em;
+}
+
+>>>>>>> develop
 /* Hero Styles ============================================================== */
 
 .jumbotron {

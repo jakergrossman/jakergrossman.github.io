@@ -144,3 +144,13 @@ strong {
 	display: flex;
 	justify-content: space-between;
 }
+
+.mobile-footer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.mobile-footer a {
+	padding: 0 1em;
+}

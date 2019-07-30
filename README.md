@@ -1,2 +1,2 @@
 # jakergrossman.github.io
-Personal Portfolio for Jake Grossman [jakergrossman.github.io](jakergrossman.github.io)
+Personal Portfolio for Jake Grossman [jakergrossman.xyz](jakergrossman.xyz)

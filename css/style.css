@@ -73,10 +73,6 @@ strong {
 	margin-top: 7vh;
 }
 
-.jumbotron .container {
-	margin-top: 13vh;
-}
-
 .lead {
 	text-transform: uppercase;
 }
@@ -99,6 +95,68 @@ strong {
     50%{    color: transparent; }
     99%{    color: transparent;  }
     100%{   color: inherit;    }
+}
+
+@media (min-width: 0px) {
+	.headline {
+			font-size: 1.5em;
+		}
+
+	.lead {
+			font-size: 1em;
+		}
+
+	.jumbotron {
+		height: 35vh;
+		margin-bottom: 0;
+		margin-top: 7vh;
+	}
+
+	.jumbotron .container {
+		margin-top: 7vh;
+		margin-bottom: 0vh;
+	}
+}
+
+@media (min-width: 768px) {
+	.headline {
+		font-size: 2em;
+	}
+
+	.lead {
+			font-size: 1.5em;
+	}
+
+	.jumbotron {
+		height: 45vh;
+		margin-top: 7vh;
+	}
+
+	.jumbotron .container {
+		margin-top: 7vh;
+		margin-bottom: 0vh;
+	}
+}
+
+@media (min-width: 992px) {
+	.headline {
+		font-size: 3.5rem;
+	}
+
+	.lead {
+		font-size: 1.171875rem;
+	}
+
+	.jumbotron {
+		height: 60vh;
+		margin-bottom: 0;
+		margin-top: 7vh;
+	}
+
+	.jumbotron .container {
+		margin-top: 13vh;
+		margin-bottom: 0vh;
+	}
 }
 
 /* Project Styles =========================================================== */

@@ -21,6 +21,9 @@ a,
 a:hover {
     color: var(--accent-color);
 }
+
+.underline {
+    text-decoration: underline;
 }
 
 .page-wrapper {
@@ -89,10 +92,15 @@ a:hover {
     padding: 10px 20px;
 }
 
+.footer button:hover {
+    text-decoration: underline;
+}
+
 #github {
     border: none;
     margin-right: 20px;
     background: var(--accent-color);
+    text-decoration-color: var(--background-color);
 }
 
 #github a {

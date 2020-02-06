@@ -8,13 +8,19 @@ html, body {
 
     font-family: 'Roboto Slab', serif;
 
-    color: #382f25;
-    background: #f1f0cc;
+    --background-color: #fffff7;
+    --text-color: #382f25;
+    --accent-color: #d1233d;
+    --caret-color: #b2a79b;
+
+    color: var(--text-color);
+    background: var(--background-color);
 }
 
 a,
 a:hover {
-    color: #d1233d;
+    color: var(--accent-color);
+}
 }
 
 .page-wrapper {
@@ -68,7 +74,7 @@ a:hover {
 }
 
 .content > ul li span {
-    color: #b2a79b;
+    color: var(--caret-color);
 }
 
 /* footer */
@@ -86,21 +92,19 @@ a:hover {
 #github {
     border: none;
     margin-right: 20px;
-    background: #d1233d;
+    background: var(--accent-color);
 }
 
 #github a {
-    color: #f1f0cc;
+    color: var(--background-color);
 }
 
 #contact {
-    color: #d1233d;
-    background: #f1f0cc;
+    color: var(--accent-color);
+    background: var(--background-color);
     border: none;
-    outline: 2px solid #d1233d;
+    outline: 2px solid var(--accent-color);
     outline-offset: -2px;
-}
 
-#contact a:hover {
-    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
 }

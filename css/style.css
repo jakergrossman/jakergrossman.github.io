@@ -7,6 +7,7 @@ html, body {
     height: 100%;
 
     font-family: 'Roboto Slab', serif;
+    line-height: 1.5;
 
     --background-color: #fffff7;
     --text-color: #382f25;
@@ -17,9 +18,15 @@ html, body {
     background: var(--background-color);
 }
 
-a,
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+
 a:hover {
     color: var(--accent-color);
+    text-decoration: underline;
 }
 
 .underline {
@@ -61,6 +68,10 @@ a:hover {
 
 .content h1 {
     font-weight: bold;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    font-size: 2.5rem;
 }
 
 .content ul {
@@ -70,6 +81,7 @@ a:hover {
 
 .content > ul {
     padding-left: 0;
+    margin-top: 0;
 }
 
 .content > ul li {
@@ -90,6 +102,10 @@ a:hover {
 
 .footer button {
     padding: 10px 20px;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
 }
 
 .footer button:hover {

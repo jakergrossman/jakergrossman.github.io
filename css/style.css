@@ -43,20 +43,6 @@ a:hover {
     align-items: center;
 }
 
-@media screen and (max-width: 719px) {
-    .content {
-        width: 80%;
-        max-width: 80%;
-    }
-}
-
-@media screen and (min-width: 720px) {
-    .content {
-        width: 33%;
-        max-width: 33%;
-    }
-}
-
 /* main content */
 .content {
     display: flex;
@@ -64,6 +50,15 @@ a:hover {
     align-items: flex-start;
     justify-content: space-around;
 
+    width: 80%;
+    max-width: 80%;
+}
+
+@media screen and (min-width: 720px) {
+    .content {
+        width: 33%;
+        max-width: 33%;
+    }
 }
 
 .content h1 {

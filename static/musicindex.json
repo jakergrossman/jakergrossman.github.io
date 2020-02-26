@@ -1,0 +1,15 @@
+{
+	"composers": [
+		{
+			"Viviani, G.V.": [
+				{
+					"composer": "G.V. Viviani",
+					"title": "Sonata No. 1",
+					"date": 1678,
+					"blurb": "A piece from the early baroque. 5 movements.",
+					"link": "static/music/sonata_1_viviani.pdf"
+				}
+			]
+		}
+	]
+}

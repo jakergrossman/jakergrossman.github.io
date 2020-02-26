@@ -186,9 +186,20 @@ a:hover {
 	border: 2px solid var(--accent-color);
 	margin: 1em;
 	height: 250px;
-	width: calc(33% - 3px - 2em);
+	width: 100%;
 }
 
+@media screen and (min-width: 600px) {
+	.music-item {
+		width: calc(50% - 4px - 2em);
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.music-item {
+		width: calc(33% - 4px - 2em);
+	}
+}
 
 .music-item .content {
 	justify-content: flex-start;	
@@ -226,7 +237,7 @@ a:hover {
 
 .music-item-footer {
 	padding: 0 .5em;
-	font-size: 1.5em;
+	font-size: 1.5em !important;
 }
 
 .music-item-footer * {
@@ -267,11 +278,11 @@ a:hover {
 }
 
 @media screen and (max-height: 500px) {
-	.content {
+	.content #landing {
 		font-size: 3vh;
 	}
 
-	.content h1 {
+	.content #landing h1 {
 		font-size: 10vh !important;
 	}
 

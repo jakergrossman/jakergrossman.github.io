@@ -265,3 +265,17 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 }
+
+@media screen and (max-height: 500px) {
+	.content {
+		font-size: 3vh;
+	}
+
+	.content h1 {
+		font-size: 10vh !important;
+	}
+
+	.footer button {
+		padding: 2vh 4vh;
+	}
+}`

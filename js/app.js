@@ -53,7 +53,7 @@ function showLanding() {
 	music.classList.add('hidden');
 
 	setTimeout(function() {
-		back.style.left = (back.offsetWidth * -1) + 'px';
+		back.style.left = "-6em";
 	}, 500);
 }
 

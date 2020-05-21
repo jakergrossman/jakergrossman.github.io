@@ -16,6 +16,7 @@
 		<title>Jake Grossman</title>
 
 		<link rel="stylesheet" href="css/style.css">
+		<link id="theme" rel="stylesheet" href="css/themes/default.css">
 	</head>
 	<body>
 		<div class="page-wrapper">
@@ -63,7 +64,13 @@
 						</a>
 					</button>
 				</div>
+				<div id="theme-buttons">
+					<button id="prev-theme" onclick="prevTheme()" aria-label="Previous Theme">&lt;</button>
+					<button id="next-theme" onclick="nextTheme()" aria-label="Next Theme">&gt;</button>
+				</div>
 			</div>
 		</div>
+
+		<script src="main.js"></script>
 	</body>
 </html>

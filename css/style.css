@@ -9,11 +9,6 @@ html, body {
     font-family: 'Roboto Slab', serif;
     line-height: 1.5;
 
-    --background-color: #fffff7;
-    --text-color: #382f25;
-    --accent-color: #d1233d;
-    --caret-color: #b2a79b;
-
     color: var(--text-color);
     background: var(--background-color);
 }
@@ -148,4 +143,45 @@ a:hover {
 	.footer button {
 		padding: 2vh 4vh;
 	}
-}`
+}
+
+#theme-buttons {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	padding-left: 10px;
+	left: 0;
+	bottom: 0;
+	opacity: 1;
+	transition: opacity .3s ease-in-out 0s;
+}
+
+@media screen and (max-width: 860px) {
+	#theme-buttons {
+		opacity: 0;
+	}
+}
+
+#theme-buttons button {
+	visibility: visible;
+	border: none;
+	padding: 10px 10px;
+	background: transparent;
+	opacity: 0.4;
+	font-size: 2em;
+	color: var(--caret-color);
+	transition: opacity .4s ease-in-out 0s;
+}
+
+#theme-buttons button:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+
+#theme-buttons button:active {
+	-webkit-transition: opacity .4s ease-in-out 0s;
+}
+
+#theme-buttons button:focus {
+	outline: none;
+}

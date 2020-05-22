@@ -125,14 +125,14 @@ a:hover {
     margin-right: 20px;
     background: var(--accent-color);
     color: var(--content-background);
-    text-decoration-color: var(--content-backround);
+    text-decoration-color: var(--content-background);
 
     transition: color 0.35s ease-in-out 0s;
     transition: background 0.35s ease-in-out 0s;
 }
 
 #github a {
-    color: var(--background-color);
+    color: var(--content-background);
 }
 
 #contact {

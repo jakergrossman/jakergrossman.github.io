@@ -120,6 +120,13 @@ a:hover {
     text-decoration: underline;
 }
 
+@media screen and (min-width: 860px) {
+    .footer {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
 #github {
     border: none;
     margin-right: 20px;

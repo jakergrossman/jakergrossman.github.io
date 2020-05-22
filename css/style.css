@@ -47,6 +47,9 @@ a:hover {
 
     width: 80%;
     max-width: 80%;
+    padding: 20px 25px;
+    background: var(--content-background);
+    border-radius: 25px;
 }
 
 @media screen and (min-width: 860px) {
@@ -114,7 +117,8 @@ a:hover {
     border: none;
     margin-right: 20px;
     background: var(--accent-color);
-    text-decoration-color: var(--background-color);
+    color: var(--content-background);
+    text-decoration-color: var(--content-backround);
 }
 
 #github a {
@@ -123,7 +127,7 @@ a:hover {
 
 #contact {
     color: var(--accent-color);
-    background: var(--background-color);
+    background: var(--content-color);
     border: none;
     outline: 2px solid var(--accent-color);
     outline-offset: -2px;

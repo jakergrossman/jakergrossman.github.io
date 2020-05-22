@@ -90,6 +90,7 @@ a:hover {
 #recent li:before {
     color: var(--caret-color);
     content: '\03E \020';
+    transition: color 0.35s ease-in-out 0s;
 }
 
 #recent li {

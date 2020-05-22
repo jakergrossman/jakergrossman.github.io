@@ -188,8 +188,8 @@ a:hover {
     transition: opacity .3s ease-in-out 0s,
                 color 0.35s ease-in-out 0s;
     color: var(--caret-color);
-	line-height: 1;
-	padding-bottom: .25em;
+    line-height: 1;
+    padding-bottom: .25em;
 }
 
 #theme-selection:hover #current-theme {
@@ -208,9 +208,9 @@ a:hover {
         opacity: 0;
     }
 
-	#theme-selection:hover #current-theme {
-		opacity: 0;
-	}
+    #theme-selection:hover #current-theme {
+        opacity: 0;
+    }
 }
 
 #theme-buttons button {

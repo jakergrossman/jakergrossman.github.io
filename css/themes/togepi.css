@@ -1,0 +1,7 @@
+body {
+    --background-color: #faf9f5;
+    --content-background: var(--background-color);
+    --text-color: #121428;
+    --caret-color: #dc4750;
+    --accent-color: #72a7be;
+}

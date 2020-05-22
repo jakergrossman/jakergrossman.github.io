@@ -199,6 +199,10 @@ a:hover {
     #theme-buttons {
         opacity: 0;
     }
+
+	#theme-selection:hover #current-theme {
+		opacity: 0;
+	}
 }
 
 #theme-buttons button {

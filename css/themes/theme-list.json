@@ -1,5 +1,7 @@
 {
 	"themes": [
-		"default"
+		"default",
+		"dots",
+		"gruvbox"
 	]
 }

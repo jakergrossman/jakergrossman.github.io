@@ -40,6 +40,7 @@ function setTheme(theme) {
 					.text()
 					.then(css => {
 						document.querySelector('#theme').setAttribute('href', `css/themes/${theme}.css`);
+						document.querySelector('#current-theme').innerText = theme;
 					})
 					.catch(err => console.error(err));
 			} else {
@@ -82,4 +83,3 @@ function nextTheme() {
 
 	setTheme(themes[themeIndex]);
 }
-

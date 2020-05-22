@@ -9,6 +9,9 @@ html, body {
     font-family: 'Roboto Slab', serif;
     line-height: 1.5;
 
+    transition: background 0.35s ease-in-out 0s,
+                color 0.35s ease-in-out 0s;
+
     color: var(--text-color);
     background: var(--background-color);
 }
@@ -16,6 +19,8 @@ html, body {
 a {
     color: var(--accent-color);
     text-decoration: none;
+
+    transition: color 0.35s ease-in-out 0s;
 }
 
 
@@ -50,6 +55,8 @@ a:hover {
     padding: 20px 25px;
     background: var(--content-background);
     border-radius: 25px;
+
+    transition: background 0.35s ease-in-out 0s;
 }
 
 @media screen and (min-width: 860px) {
@@ -119,6 +126,9 @@ a:hover {
     background: var(--accent-color);
     color: var(--content-background);
     text-decoration-color: var(--content-backround);
+
+    transition: color 0.35s ease-in-out 0s;
+    transition: background 0.35s ease-in-out 0s;
 }
 
 #github a {
@@ -133,6 +143,10 @@ a:hover {
     outline-offset: -2px;
 
     text-decoration-color: var(--accent-color);
+
+    transition: color 0.35s ease-in-out 0s,
+                background 0.35s ease-in-out 0s,
+                outline 0.35s ease-in-out 0s;
 }
 
 @media screen and (max-height: 500px) {
@@ -163,7 +177,8 @@ a:hover {
     text-align: center;
     width: 100%;
     opacity: 0;
-    transition: opacity .3s ease-in-out 0s;
+    transition: opacity .3s ease-in-out 0s,
+                color 0.35s ease-in-out 0s;
     color: var(--caret-color);
 }
 
@@ -192,7 +207,8 @@ a:hover {
     opacity: 0.4;
     font-size: 2em;
     color: var(--caret-color);
-    transition: opacity .4s ease-in-out 0s;
+    transition: opacity .4s ease-in-out 0s,
+                color 0.35s ease-in-out 0s;
 }
 
 #theme-buttons button:hover {

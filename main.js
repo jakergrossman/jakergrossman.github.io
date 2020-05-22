@@ -40,7 +40,9 @@ function setTheme(theme) {
 					.text()
 					.then(css => {
 						document.querySelector('#theme').setAttribute('href', `css/themes/${theme}.css`);
-						document.querySelector('#current-theme').innerText = theme;
+
+						// set current theme text, replacing underscores with line breaks
+						document.querySelector('#current-theme').innerHTML = theme.replace("_", "<br>");
 					})
 					.catch(err => console.error(err));
 			} else {

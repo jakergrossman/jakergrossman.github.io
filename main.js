@@ -85,3 +85,35 @@ function nextTheme() {
 
     setTheme(themes[themeIndex]);
 }
+
+// set favicon on page load
+setFavicon();
+
+// update favicon on transition end
+document.querySelector('body').addEventListener('transitionend', setFavicon);
+function setFavicon() {
+    let canvas = document.createElement('canvas');
+    let favicon = document.querySelector('#favicon');
+    let context = canvas.getContext('2d');
+
+    // init favicon canvas
+    canvas.width = 64; canvas.height = 64;
+    canvas.style.position = "absolute";
+    canvas.style.visibility = "hidden"
+
+    // draw outer circle
+    context.fillStyle = window.getComputedStyle(document.querySelector('body'), null).getPropertyValue('--accent-color');
+    context.beginPath();
+    context.arc(32, 32, 32, 0, 2 * Math.PI);
+    context.fill();
+    context.closePath();
+
+    // draw inner circle
+    context.fillStyle = window.getComputedStyle(document.querySelector('body'), null).getPropertyValue('--content-background');
+    context.beginPath();
+    context.arc(32, 32, 26, 0, 2 * Math.PI);
+    context.fill();
+
+
+    favicon.href = canvas.toDataURL();
+}

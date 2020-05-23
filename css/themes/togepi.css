@@ -1,6 +1,6 @@
 body {
     --background-color: #faf9f5;
-    --content-background: var(--background-color);
+    --content-background-color: var(--background-color);
     --text-color: #121428;
     --caret-color: #d86c59;
     --accent-color: #49a6c9;

@@ -1,6 +1,6 @@
 body {
     --background-color: #405073;
-    --content-background: #2c374f;
+    --content-background-color: #2c374f;
     --text-color: #f7f7f7;
     --accent-color: #f8c200;
     --caret-color: var(--accent-color);

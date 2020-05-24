@@ -59,13 +59,6 @@ a:hover {
     transition: background 0.35s ease-in-out 0s;
 }
 
-@media screen and (min-width: 860px) {
-    .content {
-        width: 33%;
-        max-width: 33%;
-    }
-}
-
 .content h1 {
     font-weight: bold;
     margin-top: 0;
@@ -121,13 +114,6 @@ a:hover {
     text-decoration: underline;
 }
 
-@media screen and (min-width: 860px) {
-    .footer {
-        justify-content: space-evenly;
-        width: 100%;
-    }
-}
-
 #github {
     border: none;
     margin-right: 20px;
@@ -155,20 +141,6 @@ a:hover {
     transition: color 0.35s ease-in-out 0s,
                 background 0.35s ease-in-out 0s,
                 outline 0.35s ease-in-out 0s;
-}
-
-@media screen and (max-height: 500px) {
-    .content {
-        font-size: 3vh;
-    }
-
-    .content h1 {
-        font-size: 10vh;
-    }
-
-    .footer button {
-        padding: 2vh 4vh;
-    }
 }
 
 #theme-selection {
@@ -199,18 +171,8 @@ a:hover {
 #theme-buttons {
     display: flex;
     justify-content: flex-start;
-    opacity: 1;
+    opacity: 0;
     transition: opacity .3s ease-in-out 0s;
-}
-
-@media screen and (max-width: 860px) {
-    #theme-buttons {
-        opacity: 0;
-    }
-
-    #theme-selection:hover #current-theme {
-        opacity: 0;
-    }
 }
 
 #theme-buttons button {
@@ -236,4 +198,40 @@ a:hover {
 
 #theme-buttons button:focus {
     outline: none;
+}
+
+/* on screens >860px in width */
+@media screen and (min-width: 860px) {
+    .content {
+        width: 33%;
+        max-width: 33%;
+    }
+
+    .footer {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    #theme-buttons {
+        opacity: 1;
+    }
+
+    #theme-selection:hover #current-theme {
+        opacity: 1;
+    }
+j
+
+/* edit font size to keep content on screen */
+@media screen and (max-height: 500px) {
+    .content {
+        font-size: 3vh;
+    }
+
+    .content h1 {
+        font-size: 10vh;
+    }
+
+    .footer button {
+        padding: 2vh 4vh;
+    }
 }

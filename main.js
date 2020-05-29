@@ -109,7 +109,7 @@ function setFavicon() {
     context.closePath();
 
     // draw inner circle
-    context.fillStyle = window.getComputedStyle(document.querySelector('body'), null).getPropertyValue('--content-background');
+    context.fillStyle = window.getComputedStyle(document.querySelector('body'), null).getPropertyValue('--content-background-color');
     context.beginPath();
     context.arc(32, 32, 26, 0, 2 * Math.PI);
     context.fill();

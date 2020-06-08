@@ -219,7 +219,7 @@ a:hover {
     #theme-selection:hover #current-theme {
         opacity: 1;
     }
-j
+}
 
 /* edit font size to keep content on screen */
 @media screen and (max-height: 500px) {

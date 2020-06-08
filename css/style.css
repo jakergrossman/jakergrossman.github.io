@@ -221,14 +221,20 @@ a:hover {
     }
 }
 
-/* edit font size to keep content on screen */
+/* adjust font size on screens < 500px in height */
+/* this prevents text from overflowing on top and bottom */
 @media screen and (max-height: 500px) {
     .content {
-        font-size: 3vh;
+        font-size: 2.7vh;
     }
 
     .content h1 {
-        font-size: 10vh;
+        font-size: 6.7vh;
+    }
+
+    /* Why does this fix inconsistent font sizes? */
+    .content li {
+        display: block;
     }
 
     .footer button {

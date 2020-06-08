@@ -169,9 +169,8 @@ a:hover {
 }
 
 #theme-buttons {
-    display: flex;
+    display: none;
     justify-content: flex-start;
-    opacity: 0;
     transition: opacity .3s ease-in-out 0s;
 }
 
@@ -213,7 +212,7 @@ a:hover {
     }
 
     #theme-buttons {
-        opacity: 1;
+        display: flex;
     }
 
     #theme-selection:hover #current-theme {

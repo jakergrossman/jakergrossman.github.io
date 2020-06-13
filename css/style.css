@@ -62,9 +62,17 @@ a:hover {
 .content h1 {
     font-weight: bold;
     margin-top: 0;
-    margin-bottom: .5rem;
+    margin-bottom: -0.5rem;
     line-height: 1.2;
     font-size: 2.5rem;
+}
+
+#pronouns {
+    font-size: 1.25rem;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    opacity: 90%;
 }
 
 /* recent things list */
@@ -229,6 +237,7 @@ a:hover {
 
     .content h1 {
         font-size: 6.7vh;
+        margin-bottom: 0.5rem;
     }
 
     /* Why does this fix inconsistent font sizes? */

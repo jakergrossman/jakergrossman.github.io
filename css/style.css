@@ -214,6 +214,10 @@ a:hover {
         max-width: 33%;
     }
 
+    .content h1 {
+        margin-bottom: 0rem;
+    }
+
     .footer {
         justify-content: space-evenly;
         width: 100%;

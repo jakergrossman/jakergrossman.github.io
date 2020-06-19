@@ -33,7 +33,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.page-wrapper {
+#page-wrapper {
     width: 100%;
     height: 100%;
     display: flex;
@@ -44,7 +44,7 @@ a:hover {
 }
 
 /* main content */
-.content {
+#content {
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
@@ -59,7 +59,7 @@ a:hover {
     transition: background 0.35s ease-in-out 0s;
 }
 
-.content h1 {
+#content h1 {
     font-weight: bold;
     margin-top: 0;
     margin-bottom: -0.5rem;
@@ -103,14 +103,14 @@ a:hover {
 }
 
 /* footer */
-.footer {
+#footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
 }
 
-.footer button {
+#footer button {
     padding: 10px 20px;
     cursor: pointer;
     font-size: inherit;
@@ -118,7 +118,7 @@ a:hover {
     line-height: inherit;
 }
 
-.footer button:hover {
+#footer button:hover {
     text-decoration: underline;
 }
 
@@ -209,16 +209,16 @@ a:hover {
 
 /* on screens >860px in width */
 @media screen and (min-width: 860px) {
-    .content {
+    #content {
         width: 33%;
         max-width: 33%;
     }
 
-    .content h1 {
+    #content h1 {
         margin-bottom: 0rem;
     }
 
-    .footer {
+    #footer {
         justify-content: space-evenly;
         width: 100%;
     }
@@ -235,21 +235,21 @@ a:hover {
 /* adjust font size on screens < 500px in height */
 /* this prevents text from overflowing on top and bottom */
 @media screen and (max-height: 500px) {
-    .content {
+    #content {
         font-size: 2.7vh;
     }
 
-    .content h1 {
+    #content h1 {
         font-size: 6.7vh;
         margin-bottom: 0.5rem;
     }
 
-    .content ul {
+    #content ul {
         display: block;
         font-size: .5rem;
     }
 
-    .footer button {
+    #footer button {
         padding: 2vh 4vh;
     }
 }

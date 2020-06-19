@@ -244,9 +244,9 @@ a:hover {
         margin-bottom: 0.5rem;
     }
 
-    /* Why does this fix inconsistent font sizes? */
-    .content li {
+    .content ul {
         display: block;
+        font-size: .5rem;
     }
 
     .footer button {

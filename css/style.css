@@ -94,6 +94,10 @@ a:hover {
     margin: 10px 0;
 }
 
+#recent li li {
+    margin: 5px 0;
+}
+
 #recent ul {
     list-style: none
 }

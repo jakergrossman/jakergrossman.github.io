@@ -1,3 +1,28 @@
+// long tap to cycle through themes
+var longTouch = false;
+var isLink = false;
+
+document.querySelector('#content').addEventListener('touchstart', () => {
+    if (!isLink) {
+        nextTheme();
+    }
+}, false);
+
+document.querySelector('#content').addEventListener('touchend', () => {
+    isLink = false;
+}, false);
+
+// disable theme change timeout if a link is clicked
+// it's jarring to come back and the theme is different
+window.onload = () => {
+    let links = document.querySelectorAll('a');
+    links.forEach(l => {
+        l.addEventListener('touchstart', () => {
+            isLink = true;
+        });
+    });
+};
+
 var themes = undefined;
 var themeIndex = undefined;
 

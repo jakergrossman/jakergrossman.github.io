@@ -14,6 +14,9 @@ html, body {
 
     color: var(--text-color);
     background: var(--background-color);
+
+    /* no scrolling */
+    position: fixed;
 }
 
 a {
@@ -58,9 +61,9 @@ a:hover {
 #content h1 {
     font-weight: bold;
     margin-top: 0;
-    margin-bottom: -0.5rem;
+    margin-bottom: 10px;
     line-height: 1.2;
-    font-size: 2.5rem;
+    font-size: 1.75rem;
 }
 
 #pronouns {
@@ -84,6 +87,10 @@ a:hover {
     text-indent: -1em;
 }
 
+#recent a {
+    /* font-weight: bold; */
+}
+
 #recent li:before {
     color: var(--caret-color);
     content: '\03E \020';
@@ -91,7 +98,7 @@ a:hover {
 }
 
 #recent li {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 #recent li li {
@@ -117,14 +124,11 @@ a:hover {
     font-size: inherit;
     font-family: inherit;
     line-height: inherit;
+    padding: 10px 20px;
 }
 
 #footer button:hover {
     text-decoration: underline;
-}
-
-#footer button a {
-    padding: 5px 10px;
 }
 
 #github {
@@ -218,13 +222,15 @@ a:hover {
 
 /* on screens >860px in width */
 @media screen and (min-width: 860px) {
+    /* remove position: fixed */
+    html,
+    body {
+        position: initial;
+    }
+
     #content {
         width: 33%;
         max-width: 33%;
-    }
-
-    #content h1 {
-        margin-bottom: 0rem;
     }
 
     #footer {
@@ -232,9 +238,8 @@ a:hover {
         width: 100%;
     }
 
-    #footer button a {
+    #footer button {
         display: inline-block;
-        padding: 10px 20px;
     }
 
     #theme-buttons {

@@ -18,6 +18,19 @@ function loadThemeList(filename) {
                         } else {
                             if (themes.length > 0) {
                                 themeIndex = 0;
+
+                                // TODO: no room on mobile :(
+                                if (screen.width >= 860) {
+                                    // show the 'change theme' button for 3s
+                                    // time when the page is loaded
+                                    let elem = document.querySelector('#current-theme');
+                                    setTimeout(() => {
+                                        elem.style.opacity = 1;
+                                        setTimeout(() => {
+                                            elem.style.opacity = '';
+                                        }, 3000);
+                                    }, 750);
+                                }
                             } else {
                                 console.error(`no themes defined in ${filename}`);
                             }
@@ -38,7 +51,7 @@ function setTheme(theme) {
             if (response.status === 200) {
                 response
                     .text()
-                    .then(css => {
+                    .then(_ => {
                         document.querySelector('#theme').setAttribute('href', `css/themes/${theme}.css`);
 
                         // set current theme text, replacing underscores with line breaks

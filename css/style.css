@@ -26,7 +26,6 @@ a {
     transition: color 0.35s ease-in-out 0s;
 }
 
-
 a:hover {
     color: var(--accent-color);
     text-decoration: underline;
@@ -67,7 +66,7 @@ a:hover {
 }
 
 #pronouns {
-    font-size: 1.25rem;
+    font-size: 1rem;
     height: 100%;
     display: inline-flex;
     align-items: center;
@@ -181,10 +180,6 @@ a:hover {
     padding-bottom: .25em;
 }
 
-#theme-selection:hover #current-theme {
-    opacity: 1;
-}
-
 #theme-buttons {
     display: none;
     justify-content: flex-start;
@@ -238,6 +233,7 @@ a:hover {
     #footer button {
         display: inline-block;
     }
+
 
     #theme-buttons {
         display: flex;

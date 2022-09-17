@@ -19,6 +19,16 @@ html, body {
     position: fixed;
 }
 
+* {
+        -webkit-touch-callout: none;
+        -webkit-user-callout: none;
+        -webkit-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-modify: none;
+        -webkit-highlight: none;
+}
+
+
 a {
     color: var(--accent-color);
     text-decoration: none;
@@ -113,24 +123,18 @@ a:hover {
     width: 100%;
 }
 
-#footer button {
+#footer a {
     cursor: pointer;
     font-size: inherit;
     font-family: inherit;
     line-height: inherit;
     width: 5.5em;
     height: 2.75em;
-}
-
-#footer button:hover {
-    text-decoration: underline;
-}
-
-#footer button a {
     display: block;
-    width: 100%;
-    height: 100%;
+
+    text-align: center;
     line-height: 2.5em;
+    border-radius: 5px;
 }
 
 #github {
@@ -139,21 +143,18 @@ a:hover {
     color: var(--content-background-color);
     text-decoration-color: var(--content-background-color);
 
-    transition: color 0.35s ease-in-out 0s;
-    transition: background 0.35s ease-in-out 0s;
-}
+    transition: color 0.35s ease-in-out 0s,
+                background 0.35s ease-in-out 0s,
+                outline 0.35s ease-in-out 0s;
 
-#github a {
-    color: var(--content-background-color);
+    border: 2px solid var(--accent-color);
 }
 
 #contact,
 #resume {
     color: var(--accent-color);
     background: var(--content-color);
-    border: none;
-    outline: 2px solid var(--accent-color);
-    outline-offset: -2px;
+    border: 2px solid var(--accent-color);
 
     text-decoration-color: var(--accent-color);
 
@@ -237,11 +238,6 @@ a:hover {
         width: 100%;
     }
 
-    #footer button {
-        display: inline-block;
-    }
-
-
     #theme-buttons {
         display: flex;
     }
@@ -266,9 +262,5 @@ a:hover {
     #content ul {
         display: block;
         font-size: .5rem;
-    }
-
-    #footer button {
-        padding: 2vh 4vh;
     }
 }
